@@ -4,29 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
-      .font-noto { font-family: 'Noto Serif', serif; }
-    </style>
-  <script src="https://cdn.tailwindcss.com"></script>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+  .font-noto { font-family: 'Noto Serif', serif; }
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Flower Shop</title>
-    
 </head>
-<body class="bg-white-800 text-gray-800 font-sans">
-  <section class="md:px-10 px-1">
+<body class="bg-white text-gray-800 font-noto"> ">
+  <section class="lg:px-10 px-1">
   <!-- navbar -->
 
   <!-- desktop -->
-    <nav class="flex justify-between items-center px-4 md:px-20 py-6">
+    <nav class="flex justify-between items-center px-4 lg:px-20 py-6">
     
-  <div class="hidden md:flex items-center space-x-6">
+  <div class="hidden lg:flex items-center space-x-6">
   <img src="logo.png" alt="Flower Shop Logo" >
 </div>
-<div class="hidden md:flex items-center space-x-6 text-gray-700 font-medium">
-  <a href="#home" class="text-black font-bold transition text-lg">Home</a>
+<div class="hidden lg:flex items-center space-x-6 text-gray-700 font-medium">
+  <a href="#home" class="text-black-500 text-lg">Home</a>
   <a href="#shop" class="text-gray-500 hover:text-black transition text-lg">Shop</a>
   <a href="#about" class="text-gray-500 hover:text-black transition text-lg">About Us</a>
- 
-  <a href="#cart" class="flex items-center gap-1 text-black font-medium">
+
+  <a href="#cart" class=" flex items-center gap-1 text-black-500 font-medium">
  <img src="cart_5166615.png" alt="cart_5166615" class="w-10 h-10">
   <span class="text-lg">Cart</span>
   <span class="font-semibold text-lg">($56)</span>
@@ -34,130 +33,159 @@
   </div>
 
   <!-- mobile -->
-
-    <div class="flex items-center justify-between w-full md:hidden px-4">
+    <div class="flex items-center justify-between w-full lg:hidden px-2">
   <img src="logo.png" alt="Flower Shop Logo" >
 </div>
 
-<div class="md:hidden flex items-center gap-1 text-black font-medium mt-5 mr-5">
-  <a href="#cart" class="flex items-center gap-1">
-    <img src="cart_5166615.png" alt="cart_5166615" class="w-10 h-10">
-    <span class="text-lg">Cart</span>
-    <span class="font-semibold text-lg">($56)</span>
-  </a>
-</div>
+ <a href="#cart" class="lg:hidden flex items-center gap-1 text-black-500 font-medium mt-5 mr-5">
+ <img src="cart_5166615.png" alt="cart_5166615" class="w-10 h-10">
+  <span class="text-lg">Cart</span>
+  <span class="font-semibold text-lg">($56)</span>
+</a>
 
+</div>
 </nav>
 
-<!-- Banner Section -->
-<section class="px-4 md:px-20 py-10 md:py-20 bg-white md:mt-20">
-  <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-8">
-
-    <!-- Text Content -->
-    <div class="w-full md:w-1/2">
-      <h1 class="text-2xl md:text-6xl font-bold text-gray-800 leading-tight mb-6">
-        <span class="text-black">ALWAYS</span>
+<!--banner-->
+<section class="px-4 lg:px-20 py-10 lg:py-20 bg-white lg:mt-20">
+  <div class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-8">
+    
+  <!-- text -->
+   <div class="w-full lg:w-1/2 text-left mr-5 py-">
+    
+      <h1 class="text-2xl lg:text-6xl font-bold text-gray-800 leading-tight font-sans">
+        <span class="text-black">ALWAYS </span>
         <span class="text-orange-500"> FRESH</span><br>
-        <span class="text-orange-500">FLOWERS</span>
+
+        <span class="text-orange-500"> FLOWERS</span>
       </h1>
-      <p class="text-gray-400 text-base md:text-lg leading-relaxed">
+
+  
+      <p class="text-gray-400 text-base lg:text-lg leading-relaxed">
         Indulge your senses with the beauty and fragrance of<br>
         our fresh flower shop. From classic roses to exotic<br>
-        blooms, we offer a wide variety perfect for any occasion.
+        blooms, we offer a wide variety of fresh flowers that<br>
+        are perfect for any occasion.
       </p>
     </div>
 
-    <!-- Image Content -->
-    <div class="w-full md:w-1/2 ml-0 ml-10">
-      <img src="hero-flower.png" alt="Fresh Flowers Banner" class="w-full h-auto">
+    <!-- image -->
+    <div class="ml-10 w-full lg:w-1/2">
+      <img src="hero-flower.png" alt="Fresh Flowers Banner" class="w-full h-auto ">
     </div>
+
   </div>
 </section>
 
-<!-- Our Plants Lover Section -->
-<section class="px-4 md:px-20 py-10 ">
-  <div class="mb-6 text-center">
+<!-- plant section -->
+  <section class="px-1 lg:px-20 py-10">
+  <div class="mb-6 text-center ">
     <h2 class="text-5xl font-bold">
       <span class="text-orange-500">Our </span>
       <span class="text-black">Plants</span>
     </h2>
-    <p class="text-gray-400 text-base md:text-lg mt-7 text-balanced">
-      Indulge your senses with the beauty and fragrance of our fresh flower shop.
-      From
-      <br> classic roses to exotic blooms, we offer a wide variety of fresh.
+     <p class="text-gray-400 text-base lg:text-lg mt-7 text-balanced">
+           Indulge your senses with the beauty and fragrance of our fresh flower shop.
+      From 
+      <br>classic roses to exotic blooms, we offer a wide variety of fresh.
     </p>
   </div>
 
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
+  <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
     <div class="flex flex-col items-left text-center">
-      <img src="sample-flower-image.png" alt="Plant" />
-      <h3 class="font-medium text-base md:text-2xl">Lily Blossom</h3>
-      <p class="text-black-600 font-bold text-base md:text-2xl">20 USD</p>
-      <button onclick="alert('Flower Added to Cart')" class="bg-orange-500 text-white px-17 py-2.5 text-sm mt-2">
+      <img src="sample-flower-image.png" alt="Plant"  />
+      <h3 class="font-medium text-base lg:text-2xl">Lily Blossom</h3>
+      <p class="font-bold text-base lg:text-2xl text-black-600">20 USD</p>
+      <button
+        onclick="alert('Flower Added to Cart')"
+        class="mt-2 bg-orange-500 text-white px-2 py-2 text-sm"
+      >
         Add to Cart
       </button>
     </div>
     <div class="flex flex-col items-left text-center">
-      <img src="sample-flower-image.png" alt="Plant" />
-      <h3 class="font-medium text-base md:text-2xl">Lily Blossom</h3>
-      <p class="text-black-600 font-bold text-base md:text-2xl">20 USD</p>
-      <button onclick="alert('Flower Added to Cart')" class="bg-orange-500 text-white px-17 py-2.5 text-sm mt-2">
+      <img src="sample-flower-image.png" alt="Plant"  />
+      <h3 class="font-medium text-base lg:text-2xl">Lily Blossom</h3>
+      <p class="font-bold text-base lg:text-2xl text-black-600">20 USD</p>
+      <button
+        onclick="alert('Flower Added to Cart')"
+        class="mt-2 bg-orange-500 text-white px-2 py-2 text-sm"
+      >
         Add to Cart
       </button>
     </div>
     <div class="flex flex-col items-left text-center">
-      <img src="sample-flower-image.png" alt="Plant" />
-      <h3 class="font-medium text-base md:text-2xl">Lily Blossom</h3>
-      <p class="text-black-600 font-bold text-base md:text-2xl">20 USD</p>
-      <button onclick="alert('Flower Added to Cart')" class="bg-orange-500 text-white px-17 py-2.5 text-sm mt-2">
+      <img src="sample-flower-image.png" alt="Plant"  />
+      <h3 class="font-medium text-base lg:text-2xl">Lily Blossom</h3>
+      <p class="font-bold text-base lg:text-2xl text-black-600">20 USD</p>
+      <button
+        onclick="alert('Flower Added to Cart')"
+        class="mt-2 bg-orange-500 text-white px-2 py-2 text-sm"
+      >
         Add to Cart
       </button>
     </div>
     <div class="flex flex-col items-left text-center">
-      <img src="sample-flower-image.png" alt="Plant" />
-      <h3 class="font-medium text-base md:text-2xl">Lily Blossom</h3>
-      <p class="text-black-600 font-bold text-base md:text-2xl">20 USD</p>
-      <button onclick="alert('Flower Added to Cart')" class="bg-orange-500 text-white px-17 py-2.5 text-sm mt-2">
+      <img src="sample-flower-image.png" alt="Plant"  />
+      <h3 class="font-medium text-base lg:text-2xl">Lily Blossom</h3>
+      <p class="font-bold text-base lg:text-2xl text-black-600">20 USD</p>
+      <button
+        onclick="alert('Flower Added to Cart')"
+        class="mt-2 bg-orange-500 text-white px-2 py-2 text-sm"
+      >
         Add to Cart
       </button>
     </div>
     <div class="flex flex-col items-left text-center">
-      <img src="sample-flower-image.png" alt="Plant" />
-      <h3 class="font-medium text-base md:text-2xl">Lily Blossom</h3>
-      <p class="text-black-600 font-bold text-base md:text-2xl">20 USD</p>
-      <button onclick="alert('Flower Added to Cart')" class="bg-orange-500 text-white px-17 py-2.5 text-sm mt-2">
+      <img src="sample-flower-image.png" alt="Plant"  />
+      <h3 class="font-medium text-base lg:text-2xl">Lily Blossom</h3>
+      <p class="font-bold text-base lg:text-2xl text-black-600">20 USD</p>
+      <button
+        onclick="alert('Flower Added to Cart')"
+        class="mt-2 bg-orange-500 text-white px-2 py-2 text-sm"
+      >
         Add to Cart
       </button>
     </div>
     <div class="flex flex-col items-left text-center">
-      <img src="sample-flower-image.png" alt="Plant" />
-      <h3 class="font-medium text-base md:text-2xl">Lily Blossom</h3>
-      <p class="text-black-600 font-bold text-base md:text-2xl">20 USD</p>
-      <button onclick="alert('Flower Added to Cart')" class="bg-orange-500 text-white px-17 py-2.5 text-sm mt-2">
+      <img src="sample-flower-image.png" alt="Plant"  />
+      <h3 class="font-medium text-base lg:text-2xl">Lily Blossom</h3>
+      <p class="font-bold text-base lg:text-2xl text-black-600">20 USD</p>
+      <button
+        onclick="alert('Flower Added to Cart')"
+        class="mt-2 bg-orange-500 text-white px-2 py-2 text-sm"
+      >
         Add to Cart
       </button>
     </div>
     <div class="flex flex-col items-left text-center">
-      <img src="sample-flower-image.png" alt="Plant" />
-      <h3 class="font-medium text-base md:text-2xl">Lily Blossom</h3>
-      <p class="text-black-600 font-bold text-base md:text-2xl">20 USD</p>
-      <button onclick="alert('Flower Added to Cart')" class="bg-orange-500 text-white px-17 py-2.5 text-sm mt-2">
+      <img src="sample-flower-image.png" alt="Plant"  />
+      <h3 class="font-medium text-base lg:text-2xl">Lily Blossom</h3>
+      <p class="font-bold text-base lg:text-2xl text-black-600">20 USD</p>
+      <button
+        onclick="alert('Flower Added to Cart')"
+        class="mt-2 bg-orange-500 text-white px-2 py-2 text-sm"
+      >
         Add to Cart
       </button>
     </div>
     <div class="flex flex-col items-left text-center">
-      <img src="sample-flower-image.png" alt="Plant" />
-      <h3 class="font-medium text-base md:text-2xl">Lily Blossom</h3>
-      <p class="text-black-600 font-bold text-base md:text-2xl">20 USD</p>
-      <button onclick="alert('Flower Added to Cart')" class="bg-orange-500 text-white px-17 py-2.5 text-sm mt-2">
+      <img src="sample-flower-image.png" alt="Plant"  />
+      <h3 class="font-medium text-base lg:text-2xl">Lily Blossom</h3>
+      <p class="font-bold text-base lg:text-2xl text-black-600">20 USD</p>
+      <button
+        onclick="alert('Flower Added to Cart')"
+        class="mt-2 bg-orange-500 text-white px-2 py-2 text-sm"
+      >
         Add to Cart
       </button>
     </div>
-  
+    
+
   </div>
 </section>
 
-<!-- Flower & Plants Lovers Section -->
+      <!-- plant lover -->
 <section class="px-1 lg:px-20 py-10 ">
   <div class="flex flex-col lg:flex-row items-center gap-2 lg:gap-20">
     
@@ -219,8 +247,10 @@
   </ul>
 </div>
 
+
   </div>
 </section>
+
 
 
 <!-- Latest Deals Section -->
@@ -305,8 +335,94 @@
 </section>
 
 
+<!-- Join Section -->
+<section class=" bg-cover bg-center bg-no-repeat mt-28 " style="background-image: url('news-letter-bg.png') ;">
+  <div class="bg-black/40 w-full h-full py-20 md:py-36 px-4">
+    <div class="mx-auto text-center text-white space-y-6 px-4">
+      <h2 class="text-2xl md:text-4xl font-bold">
+        Join the colorful Bunch
+      </h2>
+
+      
+      <form class="flex items-center justify-center w-full max-w-xl mx-auto">
+        <input
+          type="email"
+          placeholder="Write email"
+          class="w-full px-4 py-2 bg-white text-gray-900  focus:outline-none"
+        />
+        <button
+          type="submit"
+          class="px-6 py-2 bg-orange-600 text-white font-semibold  hover:bg-orange-700 transition"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class=" text-gray-700 px-4 lg:px-20 py-12 font-noto">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+    
+    <!-- Logo & Description -->
+    <div class="space-y-4">
+      <img src="logo.png" alt="Faugei Logo" class="h-10 w-auto">
+      <p class="text-sm max-w-xs">
+        Indulge your senses with the <br> beauty and fragrance of our fresh  <br> flower shop.
+      </p>
+    </div>
+
+ <!-- <div class="grid grid-cols-2 gap-x-0 md:grid-cols-1 md:gap-y-3"> -->
+  <!-- Links Column 1 -->
+  <div class="space-y-2 text-sm">
+    <p class="font-semibold text-gray-900"></p>
+    <ul class="space-y-4">
+      <li><a href="#home"    class="hover:text-orange-500 transition">Home</a></li>
+      <li><a href="#about"   class="hover:text-orange-500 transition">About Us</a></li>
+      <li><a href="#blog"    class="hover:text-orange-500 transition">Blog</a></li>
+      <li><a href="#faq"     class="hover:text-orange-500 transition">FAQ</a></li>
+      <li><a href="#contact" class="hover:text-orange-500 transition">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Links Column 2 -->
+  <div class="space-y-3 text-sm">
+    <p class="font-semibold text-gray-900"></p>
+    <ul class="space-y-4">
+      <li><a href="#features" class="hover:text-orange-500 transition">Features</a></li>
+      <li><a href="#pricing"  class="hover:text-orange-500 transition">Pricing</a></li>
+      <li><a href="#privacy"  class="hover:text-orange-500 transition">Privacy Policy</a></li>
+      <li><a href="#terms"    class="hover:text-orange-500 transition">Terms of Service</a></li>
+      <li><a href="#help"     class="hover:text-orange-500 transition">Help Center</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <!-- Social Icons -->
+    <div class="flex md:justify-end items-start space-x-4 pt-2">
+      <a href="#" aria-label="LinkedIn">
+        <img src="icon-linkedin.png" alt="LinkedIn" class="w-6 h-6">
+      </a>
+      <a href="#" aria-label="X / Twitter">
+        <img src="icon-twitter.png" alt="X" class="w-6 h-6">
+      </a>
+      <a href="#" aria-label="Facebook">
+        <img src="icon-facebook.png" alt="Facebook" class="w-6 h-6">
+      </a>
+      <a href="#" aria-label="YouTube">
+        <img src="icon-youtube.png" alt="YouTube" class="w-6 h-6">
+      </a>
+    </div>
+    
+  </div>
+</footer>
+
+
+
+
 
 
 </body>
-
 </html>
